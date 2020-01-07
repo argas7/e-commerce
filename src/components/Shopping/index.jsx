@@ -11,8 +11,8 @@ function Shopping({urlImage, text, arrTags, id}) {
 			<div><p>{text}</p></div>
 			<div className="assets">
 				<div className="tags" id={id}>
-					{arrTags.map((tag) => (
-						<span>{tag}</span>
+					{arrTags.map((tag, k) => (
+						<span key={k}>{tag}</span>
 					))}
 				</div>
 				<button>Adicionar ao Carrinho</button>
@@ -24,14 +24,14 @@ function Shopping({urlImage, text, arrTags, id}) {
 Shopping.propTypes = {
 	urlImage: PropTypes.string,
 	text: PropTypes.string,
-	arrTags: PropTypes.array,
+	arrTags: PropTypes.arrayOf(PropTypes.string),
 	id: PropTypes.number,
 };
 
 Shopping.defaultProps = {
 	urlImage: './#',
 	text: 'Put some text inside here!',
-	arrTags: [],
+	arrTags: ['tag', 'tag', 'tag'],
 	id: new Date().getTime(),
 };
 

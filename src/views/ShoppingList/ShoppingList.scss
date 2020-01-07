@@ -1,0 +1,44 @@
+#block {
+	display: flex;
+	position: relative;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+	box-shadow: 2px 2px 4px 0px black;
+}
+
+.content {
+	position: absolute;
+	top: 100px;
+	left: 250px;
+}
+
+.aside {
+	position: fixed;
+	top: 100px;
+	left: 0;
+	bottom: 0;
+	margin: 10px;
+}
+
+@media (max-width: 500px) {
+	#block {
+		margin-top: 100px;
+	}
+
+	.content {
+		display: block;
+		position: none;
+		left: 0;
+	}
+	
+	.aside {
+		display: block;
+		position: none;
+	}
+}
