@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navbar, AddList } from '../../components';
 
 export default class Test extends Component {
   constructor(props) {
@@ -7,10 +8,12 @@ export default class Test extends Component {
   }
 
   render() {
+    const { prodAdds, length, handleDelete } = this.props;
     return (
-			<div>
-					<a href="/teste">Esse atualiza a página</a>
-			</div>
+      <>
+        <Navbar length={length}/>
+        <AddList handleDelete={handleDelete} prodAdds={prodAdds} />
+      </>
     );
   }
 }

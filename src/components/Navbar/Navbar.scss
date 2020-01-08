@@ -1,8 +1,46 @@
-#nav {
+#nav-bar {
     font-size: x-large;
     color: blanchedalmond;
     background-color: #1e1e1e;
     display: flex;
+    position: relative;
     justify-content: space-between;
     padding: 10px;
+
+    button {
+        margin-top: 45%;
+        width: 30px;
+        height: 50%;
+        background-image: url('https://png.pngtree.com/svg/20160616/c880f9e59c.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    svg {
+        fill: blanchedalmond;
+    }
+
+    a {
+        text-decoration: none;
+        color: blanchedalmond;
+    }
+
+    .lengthCar {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 20px;
+        right: 5px;
+        color: blanchedalmond;
+        font-size: 0.7em;
+        font-weight: bold;
+        border: 0.5px solid black;
+        border-radius: 50%;
+        box-shadow: 1px 1px 3px 0px black;
+        background-color: red;
+    }
 }

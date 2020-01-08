@@ -16,6 +16,7 @@ class Input extends Component {
 		event.preventDefault();
 		const { filter } = this.props;
 		const { value } = this.state;
+		//Altera o valor da tag filtro para o que é passado pelo input
 		filter({
 			filterTag: value
 		})

@@ -1,15 +1,17 @@
-import Shopping from './Shopping';
+import Add from './Add';
+import AddList from './AddList';
+import Input from './Input';
 import List from './List';
 import Navbar from './Navbar';
-import Input from './Input';
+import Shopping from './Shopping';
 import TopTags from './TopTags'
-import Aside from './Aside'
 
 export {
-    Shopping,
-    List,
-    Navbar,
-    Input,
-    TopTags,
-    Aside,
+	Add,
+	AddList,
+	Input,
+	List,
+	Navbar,
+	Shopping,
+	TopTags,
 }
