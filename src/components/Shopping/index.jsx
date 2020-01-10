@@ -7,7 +7,7 @@ function Shopping({name, urlImage, text, arrTags, id, add}) {
 		add({
 			name: name,
 			description: text,
-			id: id,
+			id: new Date().getTime(),
 		})
 	}
 
@@ -18,7 +18,6 @@ function Shopping({name, urlImage, text, arrTags, id, add}) {
 			</div>
 			<div><p>{text}</p></div>
 			<div className="assets">
-				{/*Itera pelo array de tags que é passado e coloca cada uma em uma tag <span>*/}
 				<div className="tags" id={id}>
 					{arrTags.map((tag, k) => (
 						<span key={k}>{tag}</span>

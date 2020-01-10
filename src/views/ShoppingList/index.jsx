@@ -10,7 +10,7 @@ class ShoppingList extends Component {
 		this.state = {
 			filterTag: '',
 			data: [
-				{ 
+				{
 					name: 'eggs',
 					urlImage: 'https://cdn.pixabay.com/photo/2018/02/01/19/21/easter-3123834_960_720.jpg',
 					text: 'This is the text from the first product',
@@ -23,7 +23,7 @@ class ShoppingList extends Component {
 					arrTags: ['else', 'third']    
 				},
 				{
-					name: 'picole',
+					name: 'popsicle',
 					urlImage: 'https://cdn.pixabay.com/photo/2017/11/30/08/56/ice-cream-2987955__340.jpg',
 					text: 'This is the text from the third product',
 					arrTags: ['other']
@@ -59,7 +59,7 @@ class ShoppingList extends Component {
 					arrTags: ['first', 'third']    
 				},
 				{
-					name: 'pá',
+					name: 'shovel',
 					urlImage: 'https://cdn.pixabay.com/photo/2019/11/28/05/21/snow-shovel-4658403__340.jpg',
 					text: 'This is the text from the ninth product',
 					arrTags: ['second', 'third']

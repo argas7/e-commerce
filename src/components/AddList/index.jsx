@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './AddList.scss';
 import Add from '../Add';
+import './AddList.scss';
 
 function AddList({handleDelete, prodAdds}) {
     return (

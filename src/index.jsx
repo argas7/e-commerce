@@ -4,6 +4,7 @@ import {
 	BrowserRouter as Browser,
 	Switch,
 	Route,
+	Redirect,
 } from 'react-router-dom';
 import { ShoppingList, Car } from './views'
 import './global/refs.scss';
@@ -44,6 +45,9 @@ class App extends Component {
 						</Route>
 						<Route path="/carrinho">
 							<Car prodAdds={prodAdds} length={lengthCar} handleDelete={this.handleDelete} />
+						</Route>
+						<Route>
+							<Redirect to="/" />
 						</Route>
 					</Switch>
 				</div>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, AddList } from '../../components';
+import './Car.scss';
 
-export default class Test extends Component {
+class Test extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -11,9 +12,13 @@ export default class Test extends Component {
     const { prodAdds, length, handleDelete } = this.props;
     return (
       <>
-        <Navbar length={length}/>
-        <AddList handleDelete={handleDelete} prodAdds={prodAdds} />
+        <div id="car">
+          <Navbar length={length}/>
+          <AddList handleDelete={handleDelete} prodAdds={prodAdds} />
+        </div>
       </>
     );
   }
 }
+
+export default Test;

@@ -1,11 +1,17 @@
 #nav-bar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 2;
+    padding: 10px;
     font-size: x-large;
     color: blanchedalmond;
     background-color: #1e1e1e;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    padding: 10px;
+	box-shadow: 2px 2px 4px 0px black;
+
 
     button {
         margin-top: 45%;
