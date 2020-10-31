@@ -1,0 +1,19 @@
+############################################################################################# ==> 1
+|
++----> Listar compras: cada compra é um componente
++----> Cada compra recebe: url da imagem, texto, array de tags e id
+|
+############################################################################################# ==> 2
+|
++----> Filtragem de Tags
++----> 5 tags mais importantes na direita inferior
+|
+############################################################################################# ==> 3
+|
++----> Carrinho de compras
++----> Ter notificações do carrinho
++----> Redirecionar para a url (/carrinho), que terá os nomes dos produtos que estão no carrinho
+|
+############################################################################################# ==> 4
+|
++----> Redirecionar da 404 para /
